@@ -1,0 +1,15 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: fraud
+  threads:
+    virtual:
+      enabled: true
+
+# Доли исходов; остальное — APPROVED
+fraud:
+  reject-rate: ${FRAUD_REJECT_RATE:0.05}
+  timeout-rate: ${FRAUD_TIMEOUT_RATE:0.05}
+  slow-delay: 5s
