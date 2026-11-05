@@ -13,3 +13,7 @@ fraud:
   reject-rate: ${FRAUD_REJECT_RATE:0.05}
   timeout-rate: ${FRAUD_TIMEOUT_RATE:0.05}
   slow-delay: 5s
+  # Ручная проверка: копейки .66 — отказ, .77 — зависание; .88 и .99 — сценарии процессинга, их пропускаем
+  rejected-kopecks: 66
+  slow-kopecks: 77
+  pass-kopecks: [88, 99]
