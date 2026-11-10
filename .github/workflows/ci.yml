@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   ci:
-    uses: payments-app-org/payments-ci/.github/workflows/java-service.yml@feature/multi-arch
+    uses: payments-app-org/payments-ci/.github/workflows/java-service.yml@v1
     secrets: inherit
     permissions:
       contents: read
